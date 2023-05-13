@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sea Battle</title>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<div class="app">
+  <div class="app-header">
+    <h1 class="app-title">Морський бій</h1>
+    <div class="app-body">
+      <div data-side="player"></div>
+      <div class="app-menu">
+
+        <div class="app-actions" data-scene="preparation">
+          <button class="app-action" data-computer="simple" disabled>Simple</button>
+          <button class="app-action" data-computer="middle" disabled>Middle</button>
+          <button class="app-action" data-computer="hard" disabled>Hard</button>
+          <button class="app-action" data-action="manually">Розтавити кораблі самостійно</button>
+          <button class="app-action" data-action="randomize">Розтавити кораблі випадково</button>
+        </div>
+        <div class="app-actions hidden" data-scene="computer">
+          <div class="battlefield-status">Ваш хід</div>
+          <button class="app-action" data-action="gaveup">Здатися</button>
+          <button class="app-action" data-action="again">Грати ще раз</button>
+        </div>
+      </div>
+      <div data-side="opponent"></div>
+    </div>
+  </div>
+</div>
+<script src="js/additional.js"></script>
+<script src="js/Mouse.js"></script>
+
+<script src="js/Application.js"></script>
+<script src="js/Scene.js"></script>
+<script src="js/scenes/PreparationScene.js"></script>
+<script src="js/scenes/ComputerScene.js"></script>
+
+<script src="js/Battlefield.js"></script>
+<script src="js/BattlefieldView.js"></script>
+
+<script src="js/Ship.js"></script>
+<script src="js/ShipView.js"></script>
+
+<script src="js/Shot.js"></script>
+<script src="js/ShotView.js"></script>
+
+<script src="js/main.js"></script>
+</body>
+</html>
